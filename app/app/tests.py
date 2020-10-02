@@ -1,11 +1,10 @@
-    from django.test import TestCase
+from django.test import TestCase
 
-    from app.calc import add
-
-    class CalcTests(TestCase):
+from app.calc import add
 
 
-        def test_add_two_numbers(self):
-            """Test add two numbers"""
+class CalcTests(TestCase):
 
-            self.assertEqual(add(1, 3), 4)
+    def test_add_two_numbers(self):
+        """Test add two numbers"""
+        self.assertEqual(add(1, 3), 4)
